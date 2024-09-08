@@ -1,1 +1,40 @@
+Coding Challenge #1
+// Test data 1
+let massMark1 = 78; // kg
+let heightMark1 = 1.69; // meters
+let massJohn1 = 92; // kg
+let heightJohn1 = 1.95; // meters
+
+// Test data 2
+let massMark2 = 95; // kg
+let heightMark2 = 1.88; // meters
+let massJohn2 = 85; // kg
+let heightJohn2 = 1.76; // meters
+
+// BMI calculation for data 1
+let bmiMark1 = massMark1 / heightMark1 ** 2;
+let bmiJohn1 = massJohn1 / heightJohn1 ** 2;
+let markHigherBMI1 = bmiMark1 > bmiJohn1;
+
+// BMI calculation for data 2
+let bmiMark2 = massMark2 / heightMark2 ** 2;
+let bmiJohn2 = massJohn2 / heightJohn2 ** 2;
+let markHigherBMI2 = bmiMark2 > bmiJohn2;
+
+console.log(markHigherBMI1); // true or false for data 1
+console.log(markHigherBMI2); // true or false for data 2
+Coding Challenge #2
+// Test data 1 output
+if (markHigherBMI1) {
+  console.log(`Mark's BMI (${bmiMark1.toFixed(1)}) is higher than John's (${bmiJohn1.toFixed(1)})!`);
+} else {
+  console.log(`John's BMI (${bmiJohn1.toFixed(1)}) is higher than Mark's (${bmiMark1.toFixed(1)})!`);
+}
+
+// Test data 2 output
+if (markHigherBMI2) {
+  console.log(`Mark's BMI (${bmiMark2.toFixed(1)}) is higher than John's (${bmiJohn2.toFixed(1)})!`);
+} else {
+  console.log(`John's BMI (${bmiJohn2.toFixed(1)}) is higher than Mark's (${bmiMark2.toFixed(1)})!`);
+}
 
